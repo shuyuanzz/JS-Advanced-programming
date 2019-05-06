@@ -1,2 +1,5 @@
-# you-dont-know-js
+# learn-js
+
+----
 读书笔记
+----
