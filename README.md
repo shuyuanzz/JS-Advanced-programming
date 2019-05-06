@@ -60,7 +60,18 @@ var message = 'hi',
 6. 'function'————如果这个值是函数。  
 **&emsp;typeof操作符虽然是一个操作符，其也可以类似函数一样的使用括号，但是不是必须的**  
 **&emsp;`typeof null = 'object';`是因为特殊值null被认为是一个空对象的引用，因为函数相对于对象来说自身有一些特殊的属性，因此通过typeof操作符来区分函数和其它对象是有必要的。**  
-
+###### 3.4.2 undifined
+**&emsp;对未初始化的变量执行typeof会返回undifined，对未声明的变量执行该操作符也同样会返回undifined值（只有在这种情况和delete使用未声明，的变量才不会报错）**
+###### 3.4.3 null
+**&emsp;值唯一的两个数据类型：undifined、null。只要意在保存对象的变量还没有真正的保存对象，就应该明确的让该变量保存null值。这样不仅可以体现null作为空对象指针的惯例，也有助于进一步区分null和undifined。**
+###### 3.4.4 boolean
+数据类型|转换为true的值|转换为false的值
+--|:--:|--:
+Boolean|true|false
+String|任意非空字符串|''
+Number|任意非零数值|0和NAN
+Object|任何对象|null
+undifinde|不适用|undifined
 
 
 
