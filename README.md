@@ -82,7 +82,8 @@ undifinde|不适用|undifined
 ```
 var  o = new Object();
 ```  
-构造函数就是 Object()。s
+构造函数就是 Object()。  
+
 2. hasOwnProoerty(propertyName：string): 用于检查给定的属性是否在对象的实例中，接收一个类型为string的参数。
 3. isPrototypeOf(object):用于检测传入对象是不是当前对象的原型。
 4. propertyIsEnumberable(propertyName:string):用于检查给定的属性是否可以使用for-in来枚举。
