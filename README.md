@@ -71,7 +71,27 @@ Boolean|true|false
 String|任意非空字符串|''
 Number|任意非零数值|0和NAN
 Object|任何对象|null
-undifinde|不适用|undifined
+undifinde|不适用|undifined  
+###### 3.4.5 Number  
+**&emsp; 任何涉及NaN的操作都会返回NaN,NaN与任何值都不相等，包括其本身。**
+###### 3.4.6 String
+**&emsp; 转义字符，可以出现在字符串中的任何位置，而且将被作为一个字符来解析。**  
+###### 3.4.7 Object
+**&emsp; 在EMCAScript中Object类型是所有它的实例的基础，也就是说所有更具体的对象中，都会有Object类型所具有的任何属性和方法(如下)**  
+1. constructor:保存着创建当前对象的函数(构造函数)，比如说:
+```
+var  o = new Object();
+构造函数就是 Object()
+```
+2. hasOwnProoerty(propertyName：string): 用于检查给定的属性是否在对象的实例中，接收一个类型为string的参数。
+3. isPrototypeOf(object):用于检测传入对象是不是当前对象的原型。
+4. propertyIsEnumberable(propertyName:string):用于检查给定的属性是否可以使用for-in来枚举。
+5. toLocaleString():返回对象的字符串形式，与对象所执行环境的地区相对应。
+6. toString():返回对象的字符串表示。
+7. valueOf():返回对象的字符串，数值，或者布尔值表示，通常与toString()方法的返回值相同。
+
+
+
 
 
 
